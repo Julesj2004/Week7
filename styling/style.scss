@@ -118,14 +118,24 @@ nav input{
     }
 }
 
+// border-image-source: url(../images/zeldaBorder.png);
+// border-image-slice: 854 854;
+// box-sizing: border-box;
+// border-image-repeat: round;
+
 // history page
 .timeline{
     position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     border: 50px solid;
     border-image-source: url(../images/zeldaBorder.png);
     border-image-slice: 854 854;
+    box-sizing: border-box;
     border-image-repeat: round;
-    background-color: #FFFFFF;    
+    background-color: #FFFFFF;   
+    overflow: auto;
 }
 
 .content>h2{
