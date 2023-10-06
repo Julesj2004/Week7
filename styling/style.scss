@@ -118,6 +118,32 @@ nav input{
     }
 }
 
+// history page
+.timeline{
+    position: relative;
+    border: 50px solid;
+    border-image-source: url(../images/zeldaBorder.png);
+    border-image-slice: 854 854;
+    border-image-repeat: round;
+    background-color: #FFFFFF;    
+}
+
+.content>h2{
+    font-family: triforce;
+    color: #FF0000;
+}
+
+.timeline>div>div>img
+{
+    float: right;
+    width: 150px;
+    border-image-repeat: round;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+}
+
 // footer
 footer{
     background-image: url("../images/darkTexture.jpg");
@@ -139,10 +165,11 @@ footer>div>h1{
     footer{
         display: flex;
         justify-content: space-between;
+        width: 100vw;
     } 
 
     footer>div>h1{
-        padding: 0px 100px;
+        padding: 0px 5vw;
     }
 
     footer>div:nth-child(3)>h1{
