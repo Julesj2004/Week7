@@ -52,8 +52,6 @@ nav > label {
   height: 100px;
   width: 100px;
   left: 10px;
-  background-color: red;
-  opacity: 50%;
   z-index: 2;
 }
 
@@ -188,6 +186,53 @@ nav input {
   border-image-repeat: round;
 }
 
+#aboutUsP > h1 {
+  position: relative;
+  font-family: triforce;
+  color: #FF0000;
+  margin-left: 3vw;
+}
+
+.aboutUSc {
+  position: relative;
+  background-image: url("../images/greenTexture.png");
+  padding: 3vw;
+  margin-bottom: 3vw;
+}
+
+.aboutUSc > img {
+  position: relative;
+  width: 100%;
+}
+
+.aboutUSc > h1 {
+  position: relative;
+  text-align: center;
+  font-family: botw;
+  color: #50EAA8;
+  width: 100%;
+}
+
+.aboutUSc > p {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop about us: */
+  .aboutUSc {
+    overflow: auto;
+  }
+  .aboutUSc > img {
+    float: right;
+    width: 30%;
+  }
+  .aboutUSc > h1, .aboutUSc > p {
+    text-align: left;
+  }
+}
 footer {
   background-image: url("../images/darkTexture.jpg");
   margin-top: auto;
