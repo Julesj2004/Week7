@@ -164,6 +164,30 @@ nav input {
 @media only screen and (min-width: 768px) {
   /* For desktop: */
 }
+.ign_div {
+  background-color: #000000;
+  width: 80%;
+  opacity: 50%;
+  margin-top: 5vh;
+  margin-left: 9vw;
+}
+
+.ign_div > h1 {
+  color: #FFFFFF;
+  margin-left: 2vh;
+}
+
+.ign_div > img {
+  width: 300px;
+  margin-left: 3vw;
+  margin-top: 2vh;
+  border: 50px solid;
+  border-image-source: url(../images/zeldaBorder.png);
+  border-image-slice: 854 854;
+  box-sizing: border-box;
+  border-image-repeat: round;
+}
+
 footer {
   background-image: url("../images/darkTexture.jpg");
   margin-top: auto;
