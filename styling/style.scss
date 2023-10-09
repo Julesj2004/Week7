@@ -57,6 +57,8 @@ nav>label{
     height: 100px;
     width: 100px;
     left: 10px;
+    background-color: red;
+    opacity: 50%;
     z-index: 2;
 }  
 
@@ -83,7 +85,7 @@ nav input{
 }
 
 @media only screen and (min-width: 768px) {
-    /* For desktop nav: */
+    /* For desktop: */
     nav{
         text-align: center;
     }
@@ -118,30 +120,45 @@ nav input{
     }
 }
 
-// Home page 
-
-@media only screen and (min-width: 768px) {
-    /* For desktop: homepage*/
-}
-
 // border-image-source: url(../images/zeldaBorder.png);
 // border-image-slice: 854 854;
 // box-sizing: border-box;
 // border-image-repeat: round;
 
 // history page
-.timeline{
+#historyP{
+    padding: 3px;
+}
+
+.timeline>div:nth-child(1){
     position: relative;
+    width: 15%;
+    height: 100vw;
+    background-color: red;
+    float: left;
+}
+
+.timeline>div:nth-child(2){
+    position: relative;
+    width: 85%;
+    height: 100vw;
+    background-color: orange;
+    float: right;
+}
+
+.container>div{
+    float: right;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border: 50px solid;
+    border: 15vw solid;
     border-image-source: url(../images/zeldaBorder.png);
     border-image-slice: 854 854;
     box-sizing: border-box;
     border-image-repeat: round;
-    background-color: #FFFFFF;   
-    overflow: auto;
+    background: #FFFFFF;
 }
 
 .content>h2{
@@ -149,38 +166,22 @@ nav input{
     color: #FF0000;
 }
 
-.timeline>div>div>img
+.container>div>img
 {
     float: right;
-    width: 150px;
-    border-image-repeat: round;
+    width: 50%;
+}
+
+#line{
+    position: absolute;
+    background-color: green;
+    width: 12px;
+    height: 100%;
+    z-index: 100;
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-}
-
-// ign page
-.ign_div{
-    background-color: #000000;
-    width: 80%;
-    opacity: 50%;
-    margin-top: 5vh;
-    margin-left: 9vw;
-}
-.ign_div>h1{
-    color: #FFFFFF;
-    margin-left: 2vh;
-}
-.ign_div>img{
-    width: 300px;
-    margin-left: 3vw;
-    margin-top: 2vh;
-    border: 50px solid;
-    border-image-source: url(../images/zeldaBorder.png);
-    border-image-slice: 854 854;
-    box-sizing: border-box;
-    border-image-repeat: round;
 }
 
 // footer
