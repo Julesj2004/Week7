@@ -194,6 +194,7 @@ nav input{
     color: #FFFFFF;
     margin-left: 2vh;
 }
+
 .ign_div>img{
     width: 300px;
     margin-left: 3vw;
@@ -220,9 +221,27 @@ nav input{
     margin-bottom: 3vw;
 }
 
-.aboutUSc>img{
+.aboutUSc>img, .aboutUSc>.image{
     position: relative;
     width: 100%;
+}
+
+.aboutUSc>.image{
+    padding-top: 60vw;
+    border: 20vw solid;
+    border-image-source: url(../images/zeldaBorder.png);
+    border-image-slice: 854 854;
+    box-sizing: border-box;
+    border-image-repeat: round;
+    background: url("../images/aboutUsJules.png") no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+}
+
+.aboutUSc:nth-child(4)>.image{
+    background: url("../images/aboutUsMax.png") no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
 }
 
 .aboutUSc>h1{
@@ -248,7 +267,19 @@ nav input{
     
     .aboutUSc>img{
         float: right;
-        width: 30%;
+        width: 400px;
+    }
+
+    .aboutUSc>.image{
+        float: right;
+        padding-top: 0;
+        border: 100px solid;
+        border-image-source: url(../images/zeldaBorder.png);
+        border-image-slice: 854 854;
+        box-sizing: border-box;
+        border-image-repeat: round;
+        width: 400px;
+        height: 400px;
     }
 
     .aboutUSc>h1, .aboutUSc>p{
