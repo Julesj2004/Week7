@@ -282,7 +282,7 @@ footer > div > h1 {
   footer {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
   }
   footer > div > h1 {
     padding: 0px 5vw;
