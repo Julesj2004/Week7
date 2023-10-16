@@ -1,44 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zelda site</title>
-        <link rel="stylesheet" href="../styling/style.css">
-    </head>
-    <body>
-        <nav>
-            <input type="checkbox" id="msCheckBox"/>
-            <label for="msCheckBox"></label>
-            <img id="masterSword" src="../images/masterSword.png">
-            <div id="navLinks">
-                <a href="../index.html"><img src="../images/triforce.png"></a>
-                <a href="../index.html"><p>Home</p></a>
-                <a href="history.html"><p>Geschiedenis</p></a>
-                <a href="ign.html"><p>IGN Rating</p></a>
-                <a href="art.html"><p>Official Art</p></a>
-                <a href="artOoT.html"><p>Official Art</p></a>
-                <a href="artMM.html"><p>Official Art</p></a>
-                <a href="artTP.html"><p>Official Art</p></a>
-                <a href="artWW.html"><p>Official Art</p></a>
-                <a href="artBOTW.html"><p>Official Art</p></a>
-                <a href="artTOTK.html"><p>Official Art</p></a>
-                <a href="aboutUs.html"><p>Wie zijn wij</p></a>
-                <a href="contact.html"><p>Contact</p></a>
-            </div>
-        </nav>
-        <footer>
-            <div>
-                <h1>Eindopdracht</h1>
-                <h1>Responsive websites</h1>
-            </div>
-            <div>
-                <h1>Jules Verbruggen</h1>
-                <h1>Max Staals</h1>
-            </div>
-            <div>
-                <h1>Groep H2</h1>
-            </div>
-        </footer>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda site</title>
+    <link rel="stylesheet" href="../styling/style.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="msCheckBox"/>
+        <label for="msCheckBox"></label>
+        <img id="masterSword" src="../images/masterSword.png">
+        <ul id="menuLinks">
+            <li class="parent"><a href="../index.html"><img id="triforce" src="../images/triforce.png" alt="Triforce"></a></li>
+            <li class="parent"><a href="../index.html"><p>Home</p></a></li>
+            <li class="parent"><a href="history.html"><p>Geschiedenis</p></a></li>
+            <li class="parent"><a href="ign.html"><p>IGN rating</p></a></li>
+            <li class="parent"><label for="artGCheckBox"><p>Art gallery</p></label>
+                <input type="checkbox" id="artGCheckBox"/>
+                <ul id="categories" class="child">
+                    <li class="parent"><label for="n64CheckBox"><p>Nintendo64</p><span class="expand">»</span></label>
+                        <input type="checkbox" id="n64CheckBox"/>
+                        <ul id="N64" class="child">
+                            <li><a href="artOoT.html"><p>Ocarina of Time</p></a></li>
+                            <li><a href="artMM.html"><p>Majora's Mask</p></a></li>
+                        </ul>
+                    </li>
+                    <li class="parent"><label for="gcCheckBox"><p>Gamecube</p><span class="expand">»</span></label>
+                        <input type="checkbox" id="gcCheckBox"/>
+                        <ul id="gc" class="child">
+                            <li><a href="artTP.html"><p>Wind Waker</p></a></li>
+                            <li><a href="artWW.html"><p>Twilight Princess</p></a></li>
+                        </ul>
+                    </li>
+                    <li class="parent"><label for="nsCheckbox"><p>Nintendo Switch</p><span class="expand">»</span></label>
+                        <input type="checkbox" id="nsCheckbox"/>
+                        <ul id="ns" class="child">
+                            <li><a href="artBOTW.html"><p>Breath of the Wild</p></a></li>
+                            <li><a href="artTOTK.html"><p>Tears of the Kingdom</p></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="parent"><a href="aboutUs.html"><p>Wie zijn wij</p></a></li>
+            <li class="parent"><a href="contact.html"><p>Contact</p></a></li>
+        </ul>
+    </nav>
+    <footer>
+        <div>
+            <h1>Eindopdracht</h1>
+            <h1>Responsive websites</h1>
+        </div>
+        <div>
+            <h1>Jules Verbruggen</h1>
+            <h1>Max Staals</h1>
+        </div>
+        <div>
+            <h1>Groep H2</h1>
+        </div>
+    </footer>
+</body>
+
 </html>

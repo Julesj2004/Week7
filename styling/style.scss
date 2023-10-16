@@ -22,26 +22,16 @@ body{
 // Navigation
 nav{
     background-image: url("../images/darkTexture.jpg");
+    align-items: center;
 }
 
-#navLinks, nav>div>a>img{
-    display: none;
-}
-
-nav a{
-    font-family: botw;
-    font-size: 30px;
-    width: 80%;
-    display: inline-block;
-    color: #50EAA8;
-    padding: 5px 12px;
-    text-decoration: none;
-}
-
-#navLinks>a:hover{
-    color: #4DA27E;
-    transition: ease-in 0.2s;
-}
+nav>label{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 10px;
+    z-index: 2;
+}  
 
 #masterSword{
     position: relative;
@@ -52,71 +42,253 @@ nav a{
     z-index: 1;
 }  
 
-nav>label{
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    left: 10px;
-    z-index: 2;
-}  
-
-nav input:checked ~ #masterSword{
+#msCheckBox:checked ~ #masterSword{
     transform: rotate(0deg);
     top: 12.5px;
     left: 15px;
-}  
+} 
 
-nav #navLinks{
-    max-height: 0px;
-    transition: max-height 0.15s ease-out;
-    overflow: hidden;
-    display: block;
+@media only screen and (max-width: 768px) {
+    #menuLinks, #categories, #N64, #gc, #ns{
+        max-height: 0px;
+        transition: max-height 0.15s ease-out;
+        overflow: hidden;
+        display: block;
+    }
 }
 
-nav input:checked ~ #navLinks {
-    max-height: 650px;
+#msCheckBox:checked ~ #menuLinks, #artGCheckBox:checked ~ #categories, #n64CheckBox:checked ~ #N64, #gcCheckBox:checked ~ #gc,  #nsCheckbox:checked ~ #ns{
+    max-height: 1600px;
     transition: max-height 0.15s ease-in;
 }
+
 
 nav input{
     display: none;
 }
 
+.parent {
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.parent>a>p, .parent>label>p{
+    position: relative;
+    font-family: botw;
+    font-size: 30px;
+    width: 100%;
+    display: inline-block;
+    color: #50EAA8;
+    padding: 0px 12px;
+    text-decoration: none;
+	text-decoration: none;
+}
+
+.child{
+    padding-left: 20px;
+}
+
+.child li a {
+	font-family: botw;
+    font-size: 30px;
+    width: 80%;
+    display: inline-block;
+    color: #50EAA8;
+    text-decoration: none;
+	text-decoration: none;
+}
+
+li>a>p:hover{
+    color: #4DA27E;
+    transition: ease-in 0.2s;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0px;
+	min-width: 10em;
+}
+
+ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+li{
+    width: 100%;
+}
+
+#triforce, .expand{
+    display: none;
+}
+
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    nav{
-        text-align: center;
+    /* For desktop: NAV */
+    #triforce{
+        position: relative;
+        height: 55px;
+        padding: 0px 12px;
+        top: 17px;
+        display: block;
     }
 
-    nav>div>a>img, #navLinks{
-        display: inline-block;
+    .expand {
+        display: block;
+        position: absolute;
+        font-size: 12px;
+        bottom: 15px;
+        right: 15px;
+        color: #50EAA8;
     }
 
-    nav a{
+    #menuLinks{
+        max-height: 1600px;
+        overflow: visible;
+        display: block;
+    }
+
+    li{
         width: auto;
     }
-    #masterSword, nav>label>img{
-        display: none;
+
+    .child li {
+        background-image: url("../images/darkTexture.jpg");
     }
 
-    nav>div>a>img{
-        position: relative;
-        top: 12.5px;
-        height: 55px;
-    }
-
-    nav #navLinks{
-        max-height: none;
+    .parent:hover>ul {
+        display: block;
+        position: absolute;
     }
     
-    nav:hover #navLinks {
-        max-height: none;
+    .child {
+        display: none;
+        text-align: center;
+        overflow: visible;
+        padding-left: 0;
+    }
+    
+    .child li {
+        width: 180%;
     }
 
-    input{
+    input, #masterSword{
         display: none;
     }
 }
+
+
+
+
+// nav{
+//     background-image: url("../images/darkTexture.jpg");
+// }
+
+// #navLinks, nav>div>a>img{
+//     display: none;
+// }
+
+// nav a, nav label{
+//     font-family: botw;
+//     font-size: 30px;
+//     width: 80%;
+//     display: inline-block;
+//     color: #50EAA8;
+//     padding: 5px 12px;
+//     text-decoration: none;
+// }
+
+// #navLinks>a:hover, label>p:hover{
+//     color: #4DA27E;
+//     transition: ease-in 0.2s;
+// }
+
+// #masterSword{
+//     position: relative;
+//     height: 100px;
+//     transform: rotate(-90deg);
+//     left: 40px;
+//     transition: transform 0.15s ease-in-out;
+//     z-index: 1;
+// }  
+
+// nav>label{
+//     position: absolute;
+//     height: 100px;
+//     width: 100px;
+//     left: 10px;
+//     z-index: 2;
+// }  
+
+// #msCheckBox:checked ~ #masterSword{
+//     transform: rotate(0deg);
+//     top: 12.5px;
+//     left: 15px;
+// }  
+
+// nav #navLinks, nav .child{
+//     max-height: 0px;
+//     transition: max-height 0.15s ease-out;
+//     overflow: hidden;
+//     display: block;
+// }
+
+// #msCheckBox:checked ~ #navLinks, #artCheckBox:checked ~ .artL2, #n64CheckBox:checked ~ .n64Links, #gcCheckBox:checked ~ .gcLinks, #nsCheckBox:checked ~ .nsLinks{
+//     max-height: 1600px;
+//     transition: max-height 0.15s ease-in;
+// }
+
+// .child{
+//     position: relative;
+//     left: 25px;
+// }
+
+// nav input{
+//     display: none;
+// }
+
+// @media only screen and (min-width: 768px) {
+//     /* For desktop: */
+//     nav{
+//         text-align: center;
+//     }
+
+//     nav>div>a>img, #navLinks{
+//         display: inline-block;
+//     }
+
+//     nav a, nav label{
+//         width: auto;
+//     }
+//     #masterSword, nav>label>img, input, #dropdown{
+//         display: none;
+//     }
+
+//     nav>div>a>img{
+//         position: relative;
+//         top: 12.5px;
+//         height: 55px;
+//     }
+
+//     nav #navLinks{
+//         max-height: none;
+//     }
+    
+//     nav:hover #navLinks {
+//         max-height: none;
+//     }
+
+//     #artCheckBox ~ .artL2, #n64CheckBox ~ .n64Links, #gcCheckBox ~ .gcLinks, #nsCheckBox ~ .nsLinks{
+//         max-height: 1600px;
+//         position: absolute;
+//         float: left;
+//     }
+
+//     #navLinks>label ~ #dropdown{
+//         display: block;
+//     }
+// }
 
 // border-image-source: url(../images/zeldaBorder.png);
 // border-image-slice: 854 854;
