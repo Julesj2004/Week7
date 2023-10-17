@@ -11,16 +11,59 @@
             <input type="checkbox" id="msCheckBox"/>
             <label for="msCheckBox"></label>
             <img id="masterSword" src="../images/masterSword.png">
-            <div id="navLinks">
-                <a href="../index.html"><img src="../images/triforce.png"></a>
-                <a href="../index.html"><p>Home</p></a>
-                <a href="history.html"><p>Geschiedenis</p></a>
-                <a href="ign.html"><p>IGN Rating</p></a>
-                <a href="art.html"><p>Official Art</p></a>
-                <a href="aboutUs.html"><p>Wie zijn wij</p></a>
-                <a href="contact.html"><p>Contact</p></a>
-            </div>
+            <ul id="menuLinks">
+                <li class="parent"><a href="../index.html"><img id="triforce" src="../images/triforce.png" alt="Triforce"></a></li>
+                <li class="parent"><a href="../index.html"><p>Home</p></a></li>
+                <li class="parent"><a href="history.html"><p>Geschiedenis</p></a></li>
+                <li class="parent"><a href="ign.html"><p>IGN rating</p></a></li>
+                <li class="parent"><label for="artGCheckBox"><p>Art gallery</p></label>
+                    <input type="checkbox" id="artGCheckBox"/>
+                    <ul id="categories" class="child">
+                        <li class="parent"><label for="n64CheckBox"><p>Nintendo64</p><span class="expand">»</span></label>
+                            <input type="checkbox" id="n64CheckBox"/>
+                            <ul id="N64" class="child">
+                                <li><a href="artOoT.html"><p>Ocarina of Time</p></a></li>
+                                <li><a href="artMM.html"><p>Majora's Mask</p></a></li>
+                            </ul>
+                        </li>
+                        <li class="parent"><label for="gcCheckBox"><p>Gamecube</p><span class="expand">»</span></label>
+                            <input type="checkbox" id="gcCheckBox"/>
+                            <ul id="gc" class="child">
+                                <li><a href="artTP.html"><p>Wind Waker</p></a></li>
+                                <li><a href="artWW.html"><p>Twilight Princess</p></a></li>
+                            </ul>
+                        </li>
+                        <li class="parent"><label for="nsCheckbox"><p>Nintendo Switch</p><span class="expand">»</span></label>
+                            <input type="checkbox" id="nsCheckbox"/>
+                            <ul id="ns" class="child">
+                                <li><a href="artBOTW.html"><p>Breath of the Wild</p></a></li>
+                                <li><a href="artTOTK.html"><p>Tears of the Kingdom</p></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="aboutUs.html"><p>Wie zijn wij</p></a></li>
+                <li class="parent"><a href="contact.html"><p>Contact</p></a></li>
+            </ul>
         </nav>
+        <main id="aboutUsP">
+            <h1>Wie zijn wij</h1>
+            <div class="aboutUSc">
+                <img src="../images/aboutUsTriforce.png" alt="aboutUs">
+                <h1>Het project</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et fringilla purus. Proin vestibulum sed justo vitae viverra. Aliquam ac laoreet mauris. Ut egestas lorem gravida bibendum vulputate. Proin in dui neque. Nullam et metus et diam gravida fringilla ac id erat. Morbi congue velit non maximus hendrerit. Sed egestas turpis ut massa iaculis, eu blandit enim efficitur. Phasellus tristique lorem vitae rutrum porttitor. Proin tincidunt massa augue, et accumsan eros maximus sit amet. Maecenas lorem metus, bibendum in libero sit amet, lobortis fringilla est. Praesent vitae elit in lectus semper rhoncus et ac orci. Cras tempus arcu id justo volutpat blandit. Mauris porttitor nulla lectus, vel consequat erat commodo nec. Fusce volutpat, nisi eu pretium fringilla, nulla velit tincidunt felis, non vulputate justo massa et dolor. Quisque sollicitudin ullamcorper metus ac vestibulum. Donec aliquet ex ligula, et aliquam risus feugiat at. Aliquam in fringilla enim. Vivamus eu malesuada felis. In quam orci, venenatis sed velit eget, bibendum feugiat eros.</p>
+            </div>
+            <div class="aboutUSc">
+                <div class="image"></div>
+                <h1>Jules</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et fringilla purus. Proin vestibulum sed justo vitae viverra. Aliquam ac laoreet mauris. Ut egestas lorem gravida bibendum vulputate. Proin in dui neque. Nullam et metus et diam gravida fringilla ac id erat. Morbi congue velit non maximus hendrerit. Sed egestas turpis ut massa iaculis, eu blandit enim efficitur. Phasellus tristique lorem vitae rutrum porttitor. Proin tincidunt massa augue, et accumsan eros maximus sit amet. Maecenas lorem metus, bibendum in libero sit amet, lobortis fringilla est. Praesent vitae elit in lectus semper rhoncus et ac orci. Cras tempus arcu id justo volutpat blandit. Mauris porttitor nulla lectus, vel consequat erat commodo nec. Fusce volutpat, nisi eu pretium fringilla, nulla velit tincidunt felis, non vulputate justo massa et dolor. Quisque sollicitudin ullamcorper metus ac vestibulum. Donec aliquet ex ligula, et aliquam risus feugiat at. Aliquam in fringilla enim. Vivamus eu malesuada felis. In quam orci, venenatis sed velit eget, bibendum feugiat eros.</p>
+            </div>
+            <div class="aboutUSc">
+                <div class="image"></div>
+                <h1>Max</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et fringilla purus. Proin vestibulum sed justo vitae viverra. Aliquam ac laoreet mauris. Ut egestas lorem gravida bibendum vulputate. Proin in dui neque. Nullam et metus et diam gravida fringilla ac id erat. Morbi congue velit non maximus hendrerit. Sed egestas turpis ut massa iaculis, eu blandit enim efficitur. Phasellus tristique lorem vitae rutrum porttitor. Proin tincidunt massa augue, et accumsan eros maximus sit amet. Maecenas lorem metus, bibendum in libero sit amet, lobortis fringilla est. Praesent vitae elit in lectus semper rhoncus et ac orci. Cras tempus arcu id justo volutpat blandit. Mauris porttitor nulla lectus, vel consequat erat commodo nec. Fusce volutpat, nisi eu pretium fringilla, nulla velit tincidunt felis, non vulputate justo massa et dolor. Quisque sollicitudin ullamcorper metus ac vestibulum. Donec aliquet ex ligula, et aliquam risus feugiat at. Aliquam in fringilla enim. Vivamus eu malesuada felis. In quam orci, venenatis sed velit eget, bibendum feugiat eros.</p>
+            </div>
+        </main>
         <footer>
             <div>
                 <h1>Eindopdracht</h1>
