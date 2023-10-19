@@ -17,6 +17,7 @@ body{
     flex-direction: column;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 // Navigation
@@ -180,123 +181,6 @@ li{
     }
 }
 
-
-
-
-// nav{
-//     background-image: url("../images/darkTexture.jpg");
-// }
-
-// #navLinks, nav>div>a>img{
-//     display: none;
-// }
-
-// nav a, nav label{
-//     font-family: botw;
-//     font-size: 30px;
-//     width: 80%;
-//     display: inline-block;
-//     color: #50EAA8;
-//     padding: 5px 12px;
-//     text-decoration: none;
-// }
-
-// #navLinks>a:hover, label>p:hover{
-//     color: #4DA27E;
-//     transition: ease-in 0.2s;
-// }
-
-// #masterSword{
-//     position: relative;
-//     height: 100px;
-//     transform: rotate(-90deg);
-//     left: 40px;
-//     transition: transform 0.15s ease-in-out;
-//     z-index: 1;
-// }  
-
-// nav>label{
-//     position: absolute;
-//     height: 100px;
-//     width: 100px;
-//     left: 10px;
-//     z-index: 2;
-// }  
-
-// #msCheckBox:checked ~ #masterSword{
-//     transform: rotate(0deg);
-//     top: 12.5px;
-//     left: 15px;
-// }  
-
-// nav #navLinks, nav .child{
-//     max-height: 0px;
-//     transition: max-height 0.15s ease-out;
-//     overflow: hidden;
-//     display: block;
-// }
-
-// #msCheckBox:checked ~ #navLinks, #artCheckBox:checked ~ .artL2, #n64CheckBox:checked ~ .n64Links, #gcCheckBox:checked ~ .gcLinks, #nsCheckBox:checked ~ .nsLinks{
-//     max-height: 1600px;
-//     transition: max-height 0.15s ease-in;
-// }
-
-// .child{
-//     position: relative;
-//     left: 25px;
-// }
-
-// nav input{
-//     display: none;
-// }
-
-// @media only screen and (min-width: 768px) {
-//     /* For desktop: */
-//     nav{
-//         text-align: center;
-//     }
-
-//     nav>div>a>img, #navLinks{
-//         display: inline-block;
-//     }
-
-//     nav a, nav label{
-//         width: auto;
-//     }
-//     #masterSword, nav>label>img, input, #dropdown{
-//         display: none;
-//     }
-
-//     nav>div>a>img{
-//         position: relative;
-//         top: 12.5px;
-//         height: 55px;
-//     }
-
-//     nav #navLinks{
-//         max-height: none;
-//     }
-    
-//     nav:hover #navLinks {
-//         max-height: none;
-//     }
-
-//     #artCheckBox ~ .artL2, #n64CheckBox ~ .n64Links, #gcCheckBox ~ .gcLinks, #nsCheckBox ~ .nsLinks{
-//         max-height: 1600px;
-//         position: absolute;
-//         float: left;
-//     }
-
-//     #navLinks>label ~ #dropdown{
-//         display: block;
-//     }
-// }
-
-// border-image-source: url(../images/zeldaBorder.png);
-// border-image-slice: 854 854;
-// box-sizing: border-box;
-// border-image-repeat: round;
-
 // history page
 #historyP{
     padding: 3px;
@@ -318,7 +202,7 @@ li{
     float: right;
 }
 
-.container>div{
+.timeline>div>.container>div{
     float: right;
     width: 100%;
     height: 100%;
@@ -458,6 +342,136 @@ li{
 
     .aboutUSc>h1, .aboutUSc>p{
         text-align: left;
+    }
+}
+
+// art gallery
+#art>h1{
+    position: relative;
+    font-family: botw;
+    color: #FF0000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+// Image slider. Source: https://alvarotrigo.com/blog/create-a-slider-with-pure-css/ (visual bug when switching between landscape mode and portrait mode on phone)
+.slider-container {
+    background-image: url("../images/blueTexture.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    margin-right: 0px;
+    box-sizing: border-box;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.slide a {
+    position: absolute;
+}
+
+a.slide__prev {
+    left: 5%;
+}
+
+a.slide__next{
+    right: 5%;
+}
+
+.slide a>img{
+    height: 50px;
+    width: 50px;
+}
+
+.slide img{
+    position: relative;
+    width: 100%;   
+}
+
+.slide>a>img:hover{
+    -webkit-filter: brightness(95%);
+}
+
+// art gallery
+#gallery{
+    padding-top: 2.5%;
+}
+
+.artPiece{
+    position: relative;
+    width: 46.25%;
+    background-color: #FFFFFF;
+    margin-left: 2.5%;
+    margin-bottom: 2.5%;
+    float: left;
+    box-shadow: 5px 5px 2.5px lightgray;
+}
+
+.artPiece>img{
+    position: relative;
+    width: 100%;
+}
+
+.artPiece>h1{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 30px;
+    height: 60px;
+    text-align: center;
+    color: #FF0000;
+    font-family: triforce;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 290px) {
+    /* For desktop image gallery: */
+
+    .artPiece{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop image gallery: */
+    #gallery{
+        padding-top: 1%;
+    }
+
+    .artPiece{
+        width: 18.8%;
+        margin-left: 1%;
+        margin-bottom: 1%;
+        box-shadow: 10px 10px 5px lightgray;
     }
 }
 
