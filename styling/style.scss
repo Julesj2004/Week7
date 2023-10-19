@@ -182,62 +182,186 @@ li{
 }
 
 // history page
-#historyP{
-    padding: 3px;
-}
-
-.timeline>div:nth-child(1){
-    position: relative;
-    width: 15%;
-    height: 100vw;
-    background-color: red;
-    float: left;
-}
-
-.timeline>div:nth-child(2){
-    position: relative;
-    width: 85%;
-    height: 100vw;
-    background-color: orange;
-    float: right;
-}
-
-.timeline>div>.container>div{
-    float: right;
-    width: 100%;
-    height: 100%;
+#historyP * {
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    border: 15vw solid;
-    border-image-source: url(../images/zeldaBorder.png);
-    border-image-slice: 854 854;
-    box-sizing: border-box;
-    border-image-repeat: round;
-    background: #FFFFFF;
 }
 
-.content>h2{
-    font-family: triforce;
-    color: #FF0000;
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.container>div>img
-{
-    float: right;
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    margin-left: -3px;
+}
+
+.timelineC {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
     width: 50%;
 }
 
-#line{
+.timelineC::after {
+    content: '';
     position: absolute;
-    background-color: green;
-    width: 12px;
-    height: 100%;
-    z-index: 100;
+    width: 25px;
+    height: 25px;
+    left: 14px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
+.timelineC::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 15px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+}
+
+.timeline::after {
+    left: 31px;
+    background-color: #000000;
+}
+
+.timelineC {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+}
+
+.timelineC {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timelineC::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #000000;
+    border: 4px solid #C2C2C2;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 31px;
+}
+
+.right {
+    left: 31px;
+}
+
+.left::before, .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    border: medium solid #FFFFFF;
+}
+
+.left::before, .right::before {
+    left: 30px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #FFFFFF transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.left::after {
+    left: -16px;
+}
+
+// content 
+.content {
+    padding: 20px 30px;
+    background-color: #FFFFFF;
+    position: relative;
+    border-radius: 6px;
+    width: 229%;
+    box-shadow: 5px 5px 2.5px lightgray;
+    overflow: auto;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.content>h2{
+    font-family: botw;
+    color: #FF0000;
+}
+
+.content>img{
+    position: relative;
+    width: 100%;
+    float: right;
+    order: 2;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
 @media only screen and (min-width: 768px) {
-    /* For desktop: */
+    .timelineC::after{
+        left: auto;
+    }
+
+    .left::before {
+        left: auto;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #FFFFFF;
+        right: 30px;
+    }
+
+    .timeline::after {
+        left: 50%;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        left: 50%;
+    }
+
+    .right::after {
+        left: -16px;
+    }
+
+    // content
+    .content {
+        width: auto;
+        display: block;
+    }
+
+    .content>img{
+        width: 200px;
+        margin: 5px;
+    }
 }
 
 // ign page
