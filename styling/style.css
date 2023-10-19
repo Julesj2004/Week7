@@ -161,7 +161,7 @@ li {
   .child li {
     width: 180%;
   }
-  input, #masterSword {
+  nav input, #masterSword {
     display: none;
   }
 }
@@ -217,16 +217,20 @@ li {
   height: 100%;
   z-index: 100;
 }
-
+/* ignpage */
 @media only screen and (min-width: 768px) {
   /* For desktop: */
+  .ign_div {
+    width: 20%;
+  }
 }
 .ign_div {
-  background-color: #000000;
-  width: 80%;
-  opacity: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  width:90%;
+  padding: 5%;
   margin-top: 5vh;
-  margin-left: 9vw;
+  margin-bottom: 5vh;
+  color: white;
 }
 
 .ign_div > h1 {
@@ -235,14 +239,36 @@ li {
 }
 
 .ign_div > img {
-  width: 300px;
-  margin-left: 3vw;
-  margin-top: 2vh;
-  border: 50px solid;
-  border-image-source: url(../images/zeldaBorder.png);
-  border-image-slice: 854 854;
+  width: 95%;
+  padding: 2.5%;
+  position: relative;
+}
+.column {
   box-sizing: border-box;
-  border-image-repeat: round;
+}
+.ign_rating {
+  background-color: darkgreen;
+  border-radius: 4px;
+  text-align: center;
+  width: 30%;
+  margin-left: 26.5vw;
+}
+.ign_rating_link {
+  margin-left: 38%;
+  color: rgb(240, 235, 235);
+}
+.avg_rating {
+  background-color: red;
+  text-align: center;
+  width: 30%;
+  border-radius: 4px;
+  margin-left: 26.5vw;
+  
+}
+.avg_rating_link {
+ 
+  color: rgb(240, 235, 235);
+  margin-left: 36%;
 }
 
 #aboutUsP > h1 {
@@ -452,7 +478,43 @@ footer {
 footer > div {
   padding: 2px 0px;
 }
+/* Contact */
+h1 {
+  color: #04AA6D;
+  margin-left: 2vw;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  font-family: botw;
+  color: #4DA27E;
+  font-size: 20px;
+}
 footer > div > h1 {
   font-family: botw;
   color: #4DA27E;
