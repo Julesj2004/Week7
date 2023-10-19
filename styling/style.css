@@ -161,7 +161,7 @@ li {
   .child li {
     width: 180%;
   }
-  input, #masterSword {
+  nav > input, #masterSword {
     display: none;
   }
 }
@@ -345,7 +345,8 @@ li {
   width: 90%;
   padding: 5%;
   margin-top: 5vh;
-  margin-left: 9vw;
+  margin-bottom: 5vh;
+  color: white;
 }
 
 .ign_div > h1 {
