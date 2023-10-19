@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -184,7 +185,7 @@ li {
   float: right;
 }
 
-.container > div {
+.timeline > div > .container > div {
   float: right;
   width: 100%;
   height: 100%;
@@ -328,6 +329,161 @@ li {
   width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For desktop about us: */
+  .aboutUSc {
+    overflow: auto;
+  }
+  .aboutUSc > img {
+    float: right;
+    width: 400px;
+  }
+  .aboutUSc > .image {
+    float: right;
+    padding-top: 0;
+    border: 100px solid;
+    border-image-source: url(../images/zeldaBorder.png);
+    border-image-slice: 854 854;
+    box-sizing: border-box;
+    border-image-repeat: round;
+    width: 400px;
+    height: 400px;
+  }
+  .aboutUSc > h1, .aboutUSc > p {
+    text-align: left;
+  }
+}
+#art > h1 {
+  position: relative;
+  font-family: botw;
+  color: #FF0000;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.slider-container {
+  background-image: url("../images/blueTexture.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100%;
+  margin-right: 0px;
+  box-sizing: border-box;
+  transform-origin: center center;
+  transform: scale(1);
+}
+
+.slide a {
+  position: absolute;
+}
+
+a.slide__prev {
+  left: 5%;
+}
+
+a.slide__next {
+  right: 5%;
+}
+
+.slide a > img {
+  height: 50px;
+  width: 50px;
+}
+
+.slide img {
+  position: relative;
+  width: 100%;
+}
+
+.slide > a > img:hover {
+  -webkit-filter: brightness(95%);
+}
+
+#gallery {
+  padding-top: 2.5%;
+}
+
+.artPiece {
+  position: relative;
+  width: 46.25%;
+  background-color: #FFFFFF;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
+  float: left;
+  box-shadow: 5px 5px 2.5px lightgray;
+}
+
+.artPiece > img {
+  position: relative;
+  width: 100%;
+}
+
+.artPiece > h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  height: 60px;
+  text-align: center;
+  color: #FF0000;
+  font-family: triforce;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 290px) {
+  /* For desktop image gallery: */
+  .artPiece {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop image gallery: */
+  #gallery {
+    padding-top: 1%;
+  }
+  .artPiece {
+    width: 18.8%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    box-shadow: 10px 10px 5px lightgray;
+  }
+}
+footer {
+  background-image: url("../images/darkTexture.jpg");
+  margin-top: auto;
+}
+
+footer > div {
+  padding: 2px 0px;
+}
 /* Contact */
 .h1_contact {
   color: #04AA6D;
