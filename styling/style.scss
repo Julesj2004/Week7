@@ -180,7 +180,11 @@ li{
         display: none;
     }
 }
-
+// Home Page
+.linkBackground {
+    width: 100%;
+   
+}
 // history page
 #historyP{
     padding: 3px;
@@ -241,12 +245,7 @@ li{
 }
 
 // ign page
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .ign_div {
-      width: 20%;
-    }
-  }
+
   .ign_div {
     background-color: rgba(0, 0, 0, 0.2);
     width:90%;
@@ -265,6 +264,13 @@ li{
     width: 95%;
     padding: 2.5%;
     position: relative;
+  }
+  .ign_text {
+    text-align: center;
+    padding-bottom: 20px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
   }
   .column_ign {
     box-sizing: border-box;
@@ -286,7 +292,6 @@ li{
     width: 30%;
     border-radius: 4px;
     margin-left: 26.5vw;
-    
   }
   .avg_rating_link {
    
@@ -294,6 +299,25 @@ li{
     margin-left: 36%;
   }
 
+  @media only screen and (min-width: 768px) {
+    /* ign for desktop: */
+    .ign_div > img {
+        position: relative;
+        width: 50%;
+        margin-left: 16vw;
+    }
+    .ign_rating_link {
+        position: relative;
+        margin-left: 38.2vw;
+    }
+    .avg_rating_link{
+        position: relative;
+        margin-left: 38vw;
+    }
+    .ign_div > h1 {
+        margin-left: 18vw;
+      }
+  }
 
 // about us
 #aboutUsP>h1{
