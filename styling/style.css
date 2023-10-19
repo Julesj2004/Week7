@@ -217,6 +217,65 @@ li {
   z-index: 100;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .ign_div {
+    width: 20%;
+  }
+}
+.ign_div {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 90%;
+  padding: 5%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: white;
+}
+
+.ign_div > h1 {
+  color: #FFFFFF;
+  margin-left: 2vh;
+}
+
+.ign_div > img {
+  width: 95%;
+  padding: 2.5%;
+  position: relative;
+}
+
+.column_ign {
+  box-sizing: border-box;
+}
+
+.ign_rating {
+  background-color: darkgreen;
+  border-radius: 4px;
+  text-align: center;
+  width: 30%;
+  margin-left: 26.5vw;
+}
+
+.ign_rating_link {
+  margin-left: 38%;
+  color: rgb(240, 235, 235);
+}
+
+.avg_rating {
+  background-color: red;
+  text-align: center;
+  width: 30%;
+  border-radius: 4px;
+  margin-left: 26.5vw;
+}
+
+.avg_rating_link {
+  color: rgb(240, 235, 235);
+  margin-left: 36%;
+}
+
 #aboutUsP > h1 {
   position: relative;
   font-family: triforce;
@@ -269,43 +328,12 @@ li {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop about us: */
-  .aboutUSc {
-    overflow: auto;
-  }
-  .aboutUSc > img {
-    float: right;
-    width: 400px;
-  }
-  .aboutUSc > .image {
-    float: right;
-    padding-top: 0;
-    border: 100px solid;
-    border-image-source: url(../images/zeldaBorder.png);
-    border-image-slice: 854 854;
-    box-sizing: border-box;
-    border-image-repeat: round;
-    width: 400px;
-    height: 400px;
-  }
-  .aboutUSc > h1, .aboutUSc > p {
-    text-align: left;
-  }
-}
-footer {
-  background-image: url("../images/darkTexture.jpg");
-  margin-top: auto;
-}
-
-footer > div {
-  padding: 2px 0px;
-}
 /* Contact */
-h1 {
+.h1_contact {
   color: #04AA6D;
   margin-left: 2vw;
 }
+
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -338,6 +366,40 @@ input[type=submit]:hover {
   color: #4DA27E;
   font-size: 20px;
 }
+
+@media only screen and (min-width: 768px) {
+  /* For desktop about us: */
+  .aboutUSc {
+    overflow: auto;
+  }
+  .aboutUSc > img {
+    float: right;
+    width: 400px;
+  }
+  .aboutUSc > .image {
+    float: right;
+    padding-top: 0;
+    border: 100px solid;
+    border-image-source: url(../images/zeldaBorder.png);
+    border-image-slice: 854 854;
+    box-sizing: border-box;
+    border-image-repeat: round;
+    width: 400px;
+    height: 400px;
+  }
+  .aboutUSc > h1, .aboutUSc > p {
+    text-align: left;
+  }
+}
+footer {
+  background-image: url("../images/darkTexture.jpg");
+  margin-top: auto;
+}
+
+footer > div {
+  padding: 2px 0px;
+}
+
 footer > div > h1 {
   font-family: botw;
   color: #4DA27E;
