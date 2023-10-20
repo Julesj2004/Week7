@@ -247,7 +247,6 @@ video{
     font-size: 400%;
     margin-left: 2%;
     margin-right: 2%;
-    width: 96%;
     top: 100px;
 }
 
@@ -271,11 +270,11 @@ video{
 
 #welcomeText{
     position: relative;
-    margin-top: 100vh;
-    top: -200px;
+    padding-top: 15px;
     overflow: hidden;
     background-image: url("../images/greenTexture.png");
-
+    margin-top: 100vh;
+    top: -210px;
 }
 
 #welcomeText>h1{
@@ -299,15 +298,25 @@ video{
 
 #runes{
     position: relative;
+    top: 0;
+    background-image: url("../images/blueTexture.jpg");
+    margin-bottom: 15px;
+    margin-top: 15px;
+    top: -200px;
+    margin-bottom: -175px;
+}
+
+#runes>div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
     display: table;
-    width: 98%;
-    top: -100px;
     left: 1%;
     table-layout: fixed;
     overflow: hidden;
 }
 
-#runes>a{
+#runes>div>a{
     position: relative;
     background-color: rgba($color: #091117, $alpha: 0.9);
     border: solid #0dc6ff 3px;
@@ -318,12 +327,12 @@ video{
     font-size: 2.5vw;
 }
 
-#runes>a:hover{
+#runes>div>a:hover{
     background-color: rgba($color: #1172a9, $alpha: 0.9);
     transition: 0.3s;
 }
 
-#runes>a>div>img{
+#runes>div>a>div>img{
     position: relative;
     border-bottom: solid #0dc6ff 3px;
     width: 100%;
@@ -331,12 +340,12 @@ video{
 
 @media only screen and (min-width: 768px) {
     /* For desktop: homepage */
-    #runes{
+    #runes>div{
         width: 50%;
         left: 25%;
     }
 
-    #runes>a{
+    #runes>div>a{
         font-size: 1vw;
     }
 }
