@@ -290,6 +290,7 @@ video {
   position: relative;
   display: table;
   left: 1%;
+  width: 98%;
   table-layout: fixed;
   overflow: hidden;
 }
