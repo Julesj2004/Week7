@@ -181,10 +181,120 @@ li{
     }
 }
 // Home Page
-.linkBackground {
+#homeNav{
+    position: absolute;
+    background-image: none;
     width: 100%;
-   
 }
+
+#msCheckBox:checked ~ .homeLinks{
+    position: absolute;
+    background-image: url("../images/darkTexture.jpg");
+    top: -100px;
+    padding-top: 200px;
+}
+
+#video{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    float: right;
+}
+
+video{
+    position: relative;
+    height: 100vh;
+    top: 0;
+    
+}
+
+#page{
+    position: relative;
+    padding-top: 100vh;
+    overflow: hidden;
+}
+
+#page>h1{
+    position: relative;
+    font-family: triforce;
+    color: #FF0000;
+    left: 10px; 
+}
+
+#textH{
+    background-color: rgba($color: #d3d3d3, $alpha: 0.2);
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#textH>p{
+    position: relative;
+}
+
+#runes{
+    position: relative;
+    display: table;
+    width: 98%;
+    left: 1%;
+    table-layout: fixed;
+    padding-bottom: 15px;
+    overflow: hidden;
+}
+
+#runes>a{
+    position: relative;
+    background-color: rgba($color: #091117, $alpha: 0.9);
+    border: solid #0dc6ff 3px;
+    display: table-cell;
+    text-align: center;
+    text-decoration: none;
+    color: #0dc6ff;
+    font-size: 2.5vw;
+}
+
+#runes>a:hover{
+    background-color: rgba($color: #1172a9, $alpha: 0.9);
+    transition: 0.3s;
+}
+
+#runes>a>div>img{
+    position: relative;
+    border-bottom: solid #0dc6ff 3px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: homepage */
+    #homeNav:hover{
+        border-bottom: solid 1px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.3);
+    }
+
+    .child li {
+        background-image: none;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        border: solid 1px;
+    }
+
+    #msCheckBox:checked ~ .homeLinks{
+        top: 0;
+        padding-top: 0;
+        background-image: none;
+    }
+
+    #runes{
+        width: 50%;
+        left: 25%;
+    }
+
+    #runes>a{
+        font-size: 1vw;
+    }
+}
+
 // history page
 #historyP * {
     box-sizing: border-box;
@@ -694,6 +804,7 @@ a.slide__next{
 footer{
     background-image: url("../images/darkTexture.jpg");
     margin-top: auto;
+    z-index: 100;
 }
 
 footer>div{
