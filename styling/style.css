@@ -255,7 +255,7 @@ video {
     border-bottom: solid 1px;
     background-color: rgba(255, 255, 255, 0.3);
   }
-  .child li {
+  .childH li {
     background-image: none;
     background-color: rgba(255, 255, 255, 0.5);
     border: solid 1px;
