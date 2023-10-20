@@ -50,7 +50,7 @@ nav>label{
     left: 15px;
 } 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 921px) {
     #menuLinks, #categories, #N64, #gc, #ns{
         max-height: 0px;
         transition: max-height 0.15s ease-out;
@@ -126,7 +126,7 @@ li{
     display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 921px) {
     /* For desktop: NAV */
     #triforce{
         position: relative;
@@ -179,7 +179,25 @@ li{
     nav>input, #masterSword{
         display: none;
     }
+
+    #homeNav:hover{
+        border-bottom: solid 1px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.3);
+    }
+
+    .childH li {
+        background-image: none;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
+        border: solid 1px;
+    }
+
+    #msCheckBox:checked ~ .homeLinks{
+        top: 0;
+        padding-top: 0;
+        background-image: none;
+    }
 }
+
 // Home Page
 #homeNav{
     position: absolute;
@@ -205,25 +223,70 @@ li{
 video{
     position: relative;
     height: 100vh;
-    top: 0;
-    
+    animation: videoScroll 90s infinite; 
 }
 
-#page{
+@keyframes videoScroll{
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+#homeP>h1, #homeP>span{
     position: relative;
-    padding-top: 100vh;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: #000000 1px 0 10px;
+    font-size: 400%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 96%;
+    top: 100px;
+}
+
+#homeP>span{
+    transform: rotate(90deg);
+    display: block;
+    animation: arrow 2.5s infinite; 
+}
+
+@keyframes arrow{
+    0% {
+        top: 90px;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 90px;
+    }
+}
+
+#welcomeText{
+    position: relative;
+    margin-top: 100vh;
+    top: -200px;
     overflow: hidden;
+    background-image: url("../images/greenTexture.png");
+
 }
 
-#page>h1{
+#welcomeText>h1{
     position: relative;
-    font-family: triforce;
-    color: #FF0000;
+    font-family: botw;
+    color: #50EAA8;
     left: 10px; 
 }
 
 #textH{
-    background-color: rgba($color: #d3d3d3, $alpha: 0.2);
+    color: #FFFFFF;
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 10px;
@@ -238,9 +301,9 @@ video{
     position: relative;
     display: table;
     width: 98%;
+    top: -100px;
     left: 1%;
     table-layout: fixed;
-    padding-bottom: 15px;
     overflow: hidden;
 }
 
@@ -268,23 +331,6 @@ video{
 
 @media only screen and (min-width: 768px) {
     /* For desktop: homepage */
-    #homeNav:hover{
-        border-bottom: solid 1px;
-        background-color: rgba($color: #FFFFFF, $alpha: 0.3);
-    }
-
-    .childH li {
-        background-image: none;
-        background-color: rgba($color: #FFFFFF, $alpha: 0.5);
-        border: solid 1px;
-    }
-
-    #msCheckBox:checked ~ .homeLinks{
-        top: 0;
-        padding-top: 0;
-        background-image: none;
-    }
-
     #runes{
         width: 50%;
         left: 25%;
