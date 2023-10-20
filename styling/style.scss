@@ -274,7 +274,7 @@ video{
     overflow: hidden;
     background-image: url("../images/greenTexture.png");
     margin-top: 100vh;
-    top: -210px;
+    top: -100px;
 }
 
 #welcomeText>h1{
@@ -298,12 +298,11 @@ video{
 
 #runes{
     position: relative;
-    top: 0;
     background-image: url("../images/blueTexture.jpg");
     margin-bottom: 15px;
     margin-top: 15px;
-    top: -200px;
-    margin-bottom: -175px;
+    top: -100px;
+    margin-bottom: -85px;
 }
 
 #runes>div{
@@ -343,6 +342,15 @@ video{
     /* For desktop: homepage */
     #homeP>h1, #homeP>span{
         font-size: 400%;
+    }
+
+    #welcomeText{
+        top: -210px;
+    }
+
+    #runes{
+        top: -200px;
+        margin-bottom: -175px;
     }
 
     #runes>div{
