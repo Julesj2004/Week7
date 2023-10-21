@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+html > div[style] {
+  display: none !important;
+}
+
 nav {
   background-image: url("../images/darkTexture.jpg");
   align-items: center;

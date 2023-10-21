@@ -20,6 +20,11 @@ body{
     overflow-x: hidden;
 }
 
+// hide opera video pop out
+html > div[style] {
+    display: none !important;
+}
+
 // Navigation
 nav{
     background-image: url("../images/darkTexture.jpg");
