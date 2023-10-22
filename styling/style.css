@@ -522,7 +522,7 @@ video {
     margin: 5px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
   .content > img {
     width: 100%;
   }
@@ -603,123 +603,6 @@ video {
   }
   .ign_div > h1 {
     margin-left: 18vw;
-  }
-}
-/* about us */
-#aboutUsP > h1 {
-  position: relative;
-  font-family: triforce;
-  color: #FF0000;
-  margin-left: 3vw;
-}
-
-.aboutUSc {
-  position: relative;
-  background-image: url("../images/greenTexture.png");
-  padding: 3vw;
-  margin-bottom: 3vw;
-}
-
-.aboutUSc > img, .aboutUSc > .image {
-  position: relative;
-  width: 100%;
-}
-
-.aboutUSc > .image {
-  padding-top: 60vw;
-  border: 20vw solid;
-  border-image-source: url(../images/zeldaBorder.png);
-  border-image-slice: 854 854;
-  margin-left: 10px;
-  box-sizing: border-box;
-  border-image-repeat: round;
-  background: url("../images/aboutUsJules.png") no-repeat;
-  background-origin: border-box;
-  background-size: 100% 100%;
-}
-
-.aboutUSc:nth-child(4) > .image {
-  background: url("../images/aboutUsMax.png") no-repeat;
-  background-origin: border-box;
-  background-size: 100% 100%;
-}
-
-.aboutUSc > h1 {
-  position: relative;
-  text-align: center;
-  font-family: botw;
-  color: #50EAA8;
-  width: 100%;
-}
-
-.aboutUSc > p {
-  position: relative;
-  text-align: center;
-  color: #FFFFFF;
-  width: 100%;
-}
-
-/* Contact */
-.h1_contact {
-  color: #04AA6D;
-  margin-left: 2vw;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  padding: 20px;
-  font-family: botw;
-  color: #4DA27E;
-  font-size: 20px;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For desktop about us: */
-  .aboutUSc {
-    overflow: auto;
-  }
-  .aboutUSc > img {
-    float: right;
-    width: 400px;
-  }
-  .aboutUSc > .image {
-    float: right;
-    padding-top: 0;
-    border: 100px solid;
-    border-image-source: url(../images/zeldaBorder.png);
-    border-image-slice: 854 854;
-    box-sizing: border-box;
-    border-image-repeat: round;
-    width: 400px;
-    height: 400px;
-  }
-  .aboutUSc > h1, .aboutUSc > p {
-    text-align: left;
   }
 }
 /* art gallery */
@@ -847,6 +730,123 @@ a.slide__next {
     box-shadow: 10px 10px 5px lightgray;
   }
 }
+/* about us */
+#aboutUsP > h1 {
+  position: relative;
+  font-family: triforce;
+  color: #FF0000;
+  margin-left: 3vw;
+}
+
+.aboutUSc {
+  position: relative;
+  background-image: url("../images/greenTexture.png");
+  padding: 3vw;
+  margin-bottom: 3vw;
+}
+
+.aboutUSc > img, .aboutUSc > .image {
+  position: relative;
+  width: 100%;
+}
+
+.aboutUSc > .image {
+  padding-top: 60vw;
+  border: 20vw solid;
+  border-image-source: url(../images/zeldaBorder.png);
+  border-image-slice: 854 854;
+  box-sizing: border-box;
+  border-image-repeat: round;
+  background: url("../images/aboutUsJules.png") no-repeat;
+  background-origin: border-box;
+  background-size: 100% 100%;
+}
+
+.aboutUSc:nth-child(4) > .image {
+  background: url("../images/aboutUsMax.png") no-repeat;
+  background-origin: border-box;
+  background-size: 100% 100%;
+}
+
+.aboutUSc > h1 {
+  position: relative;
+  text-align: center;
+  font-family: botw;
+  color: #50EAA8;
+  width: 100%;
+}
+
+.aboutUSc > p {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For desktop about us: */
+  .aboutUSc {
+    overflow: auto;
+  }
+  .aboutUSc > img {
+    float: right;
+    width: 400px;
+  }
+  .aboutUSc > .image {
+    float: right;
+    padding-top: 0;
+    border: 100px solid;
+    border-image-source: url(../images/zeldaBorder.png);
+    border-image-slice: 854 854;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border-image-repeat: round;
+    width: 400px;
+    height: 400px;
+  }
+  .aboutUSc > h1, .aboutUSc > p {
+    text-align: left;
+  }
+}
+/* Contact */
+.h1_contact {
+  color: #04AA6D;
+  margin-left: 2vw;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  font-family: botw;
+  color: #4DA27E;
+  font-size: 20px;
+}
+
 /* footer */
 footer {
   background-image: url("../images/darkTexture.jpg");
