@@ -345,6 +345,18 @@ video{
 }
 
 @media only screen and (min-width: 600px) {
+    /* For mobile landscape: homepage */
+    #runes>div{
+        width: 50%;
+        left: 25%;
+    }
+
+    #runes>div>a{
+        font-size: 1vw;
+    }
+}
+
+@media only screen and (min-width: 768px){
     /* For desktop: homepage */
     #homeP>h1, #homeP>span{
         font-size: 400%;
@@ -357,15 +369,6 @@ video{
     #runes{
         top: -200px;
         margin-bottom: -175px;
-    }
-
-    #runes>div{
-        width: 50%;
-        left: 25%;
-    }
-
-    #runes>div>a{
-        font-size: 1vw;
     }
 }
 
