@@ -653,6 +653,7 @@ video{
     border: 20vw solid;
     border-image-source: url(../images/zeldaBorder.png);
     border-image-slice: 854 854;
+    margin-left: 10px;
     box-sizing: border-box;
     border-image-repeat: round;
     background: url("../images/aboutUsJules.png") no-repeat;
@@ -677,7 +678,7 @@ video{
 .aboutUSc>p{
     position: relative;
     text-align: center;
-    color: #FFFFFF;
+    color: #FFFFFF;;
     width: 100%;
 }
 /* Contact */
