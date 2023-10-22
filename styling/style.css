@@ -475,7 +475,7 @@ video {
   background-color: #FFFFFF;
   position: relative;
   border-radius: 6px;
-  width: 429%;
+  width: 229%;
   box-shadow: 5px 5px 2.5px lightgray;
   overflow: auto;
   display: flex;
@@ -522,7 +522,6 @@ video {
     display: block;
   }
   .content > img {
-    width: 200px;
     margin: 5px;
   }
 }
