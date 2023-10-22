@@ -344,18 +344,6 @@ video{
     width: 100%;
 }
 
-@media only screen and (min-width: 480px) {
-    /* For mobile landscape: homepage */
-    #runes>div{
-        width: 50%;
-        left: 25%;
-    }
-
-    #runes>div>a{
-        font-size: 1vw;
-    }
-}
-
 @media only screen and (min-width: 768px){
     /* For desktop: homepage */
     #homeP>h1, #homeP>span{
@@ -369,6 +357,16 @@ video{
     #runes{
         top: -200px;
         margin-bottom: -175px;
+    }
+
+    /* For mobile landscape: homepage */
+    #runes>div{
+        width: 50%;
+        left: 25%;
+    }
+
+    #runes>div>a{
+        font-size: 1vw;
     }
 }
 
@@ -554,8 +552,17 @@ video{
 }
 
 @media only screen and (max-width: 850px){
+    .content {
+        width: auto;
+        display: flex;
+    }
+    
     .content>img{
+        position: relative;
         width: 100%;
+        margin: 0;
+        float: right;
+        order: 2;
     }
 }
 
