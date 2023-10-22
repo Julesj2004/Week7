@@ -344,7 +344,7 @@ video{
     width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     /* For desktop: homepage */
     #homeP>h1, #homeP>span{
         font-size: 400%;
@@ -510,9 +510,7 @@ video{
     order: 2;
 }
 
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     .timelineC::after{
         left: auto;
     }
@@ -607,7 +605,7 @@ video{
     margin-left: 36%;
   }
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     /* ign for desktop: */
     .ign_div > img {
         position: relative;
@@ -716,7 +714,7 @@ video{
     color: #4DA27E;
     font-size: 20px;
   }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     /* For desktop about us: */
     .aboutUSc{
         overflow: auto;
@@ -859,7 +857,7 @@ a.slide__next{
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     /* For desktop image gallery: */
     #gallery{
         padding-top: 1%;
@@ -890,7 +888,7 @@ footer>div>h1{
     text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     /* For desktop: */
     footer{
         display: flex;
