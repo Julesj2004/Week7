@@ -1,4 +1,4 @@
-// import fonts
+/* import fonts */
 @font-face {
     font-family: triforce;
     src: url(../fonts/botw/botw.otf);
@@ -9,7 +9,7 @@
     src: url(../fonts/triforce/Triforce.ttf);
 }
 
-// General rules
+/* General rules */
 body{
     background-image: url("../images/lightTexture.png");
     min-height: 100vh;
@@ -20,12 +20,12 @@ body{
     overflow-x: hidden;
 }
 
-// hide opera video pop out
+/* hide opera video pop out */
 html > div[style] {
     display: none !important;
 }
 
-// Navigation
+/* Navigation */
 nav{
     background-image: url("../images/darkTexture.jpg");
     align-items: center;
@@ -56,6 +56,7 @@ nav>label{
 } 
 
 @media only screen and (max-width: 921px) {
+    /* sets a tiny bit of the phone layout */
     #menuLinks, #categories, #N64, #gc, #ns{
         max-height: 0px;
         transition: max-height 0.15s ease-out;
@@ -203,7 +204,7 @@ li{
     }
 }
 
-// Home Page
+/* Home Page */
 #homeNav{
     position: absolute;
     background-image: none;
@@ -368,7 +369,7 @@ video{
     }
 }
 
-// history page
+/* history page */
 #historyP * {
     box-sizing: border-box;
 }
@@ -484,7 +485,7 @@ video{
     left: -16px;
 }
 
-// content 
+/* content  */
 .content {
     padding: 20px 30px;
     background-color: #FFFFFF;
@@ -539,7 +540,7 @@ video{
         left: -16px;
     }
 
-    // content
+    /* content */
     .content {
         width: auto;
         display: block;
@@ -551,7 +552,7 @@ video{
     }
 }
 
-// ign page
+/* ign page */
 
   .ign_div {
     background-color: rgba(0, 0, 0, 0.2);
@@ -626,7 +627,7 @@ video{
       }
   }
 
-// about us
+/* about us */
 #aboutUsP>h1{
     position: relative;
     font-family: triforce;
@@ -743,7 +744,7 @@ video{
     }
 }
 
-// art gallery
+/* art gallery */
 #art>h1{
     position: relative;
     font-family: botw;
@@ -752,7 +753,6 @@ video{
     padding-right: 10px;
 }
 
-// Image slider. Source: https://alvarotrigo.com/blog/create-a-slider-with-pure-css/ (visual bug when switching between landscape mode and portrait mode on phone)
 .slider-container {
     background-image: url("../images/blueTexture.jpg");
     display: flex;
@@ -817,7 +817,7 @@ a.slide__next{
     -webkit-filter: brightness(95%);
 }
 
-// art gallery
+/* art gallery */
 #gallery{
     padding-top: 2.5%;
 }
@@ -873,7 +873,7 @@ a.slide__next{
     }
 }
 
-// footer
+/* footer */
 footer{
     background-image: url("../images/darkTexture.jpg");
     margin-top: auto;

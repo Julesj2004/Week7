@@ -1,3 +1,4 @@
+/* import fonts */
 @font-face {
   font-family: triforce;
   src: url(../fonts/botw/botw.otf);
@@ -6,6 +7,7 @@
   font-family: botw;
   src: url(../fonts/triforce/Triforce.ttf);
 }
+/* General rules */
 body {
   background-image: url("../images/lightTexture.png");
   min-height: 100vh;
@@ -16,10 +18,12 @@ body {
   overflow-x: hidden;
 }
 
+/* hide opera video pop out */
 html > div[style] {
   display: none !important;
 }
 
+/* Navigation */
 nav {
   background-image: url("../images/darkTexture.jpg");
   align-items: center;
@@ -50,6 +54,7 @@ nav > label {
 }
 
 @media only screen and (max-width: 921px) {
+  /* sets a tiny bit of the phone layout */
   #menuLinks, #categories, #N64, #gc, #ns {
     max-height: 0px;
     transition: max-height 0.15s ease-out;
@@ -183,6 +188,7 @@ li {
     background-image: none;
   }
 }
+/* Home Page */
 #homeNav {
   position: absolute;
   background-image: none;
@@ -340,6 +346,7 @@ video {
     font-size: 1vw;
   }
 }
+/* history page */
 #historyP * {
   box-sizing: border-box;
 }
@@ -455,6 +462,7 @@ video {
   left: -16px;
 }
 
+/* content  */
 .content {
   padding: 20px 30px;
   background-color: #FFFFFF;
@@ -502,6 +510,7 @@ video {
   .right::after {
     left: -16px;
   }
+  /* content */
   .content {
     width: auto;
     display: block;
@@ -511,6 +520,7 @@ video {
     margin: 5px;
   }
 }
+/* ign page */
 .ign_div {
   background-color: rgba(0, 0, 0, 0.2);
   width: 90%;
@@ -588,6 +598,7 @@ video {
     margin-left: 18vw;
   }
 }
+/* about us */
 #aboutUsP > h1 {
   position: relative;
   font-family: triforce;
@@ -703,6 +714,7 @@ input[type=submit]:hover {
     text-align: left;
   }
 }
+/* art gallery */
 #art > h1 {
   position: relative;
   font-family: botw;
@@ -775,6 +787,7 @@ a.slide__next {
   -webkit-filter: brightness(95%);
 }
 
+/* art gallery */
 #gallery {
   padding-top: 2.5%;
 }
@@ -826,6 +839,7 @@ a.slide__next {
     box-shadow: 10px 10px 5px lightgray;
   }
 }
+/* footer */
 footer {
   background-image: url("../images/darkTexture.jpg");
   margin-top: auto;

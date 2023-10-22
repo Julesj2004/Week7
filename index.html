@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jules Verbruggen">
         <title>Zelda site</title>
         <link rel="shortcut icon" type="image/x-icon" href="images/triforce.ico">
         <link rel="stylesheet" href="styling/style.css">
     </head>
     <body>
+        <!-- navigation -->
         <nav id="homeNav">
             <input type="checkbox" id="msCheckBox"/>
             <label for="msCheckBox"></label>
@@ -18,6 +20,7 @@
                 <li class="parent"><a href="pages/history.html"><p>Geschiedenis</p></a></li>
                 <li class="parent"><a href="pages/ign.html"><p>IGN rating</p></a></li>
                 <li class="parent"><label for="artGCheckBox"><p>Art gallery</p></label>
+                    <!-- dropdown -->
                     <input type="checkbox" id="artGCheckBox"/>
                     <ul id="categories" class="child childH">
                         <li class="parent"><label for="n64CheckBox"><p>Nintendo64</p><span class="expand">»</span></label>
@@ -48,14 +51,17 @@
             </ul>
         </nav>
         <main id="homeP">
+            <!-- puts a video on the homepage as a background -->
             <div id="video">
                 <video playsinline autoplay muted loop poster="cake.jpg">
                     <source src="images/botwBackground.mp4" type="video/mp4">
                 </video>
             </div>
+            <!-- welcome text -->
             <h1 id="welcome">Welkom op onze pagina</h1>
             <span class="expand">»</span>
             <div id="welcomeText">
+                <!-- website summary -->
                 <h1>Welkom,</h1>
                 <div id="textH">
                     <p>
@@ -78,6 +84,7 @@
                     </p>
                 </div>   
             </div>
+            <!-- links to other pages -->
             <div id="runes">
                 <div>
                     <a href="index.html">

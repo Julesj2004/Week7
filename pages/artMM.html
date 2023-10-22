@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jules Verbruggen">
     <title>Zelda site</title>
     <link rel="shortcut icon" type="image/x-icon" href="../images/triforce.ico">
     <link rel="stylesheet" href="../styling/style.css">
 </head>
 
 <body>
+    <!-- navigation -->
     <nav>
         <input type="checkbox" id="msCheckBox"/>
         <label for="msCheckBox"></label>
@@ -20,6 +22,7 @@
             <li class="parent"><a href="history.html"><p>Geschiedenis</p></a></li>
             <li class="parent"><a href="ign.html"><p>IGN rating</p></a></li>
             <li class="parent"><label for="artGCheckBox"><p>Art gallery</p></label>
+                <!-- dropdown -->
                 <input type="checkbox" id="artGCheckBox"/>
                 <ul id="categories" class="child">
                     <li class="parent"><label for="n64CheckBox"><p>Nintendo64</p><span class="expand">»</span></label>
@@ -52,6 +55,7 @@
     <main id="art">
         <h1>The legend of Zelda: Majora's Mask</h1>
         <div class="slider-container">
+            <!-- image slider -->
             <div class="slider">
                 <div class="slides">
                     <div id="slides__1" class="slide">
@@ -72,6 +76,7 @@
                 </div>
             </div>
         </div>
+        <!-- art gallery -->
         <div id="gallery">
             <div class="artPiece">
                 <img src="../images/mm1.jpg" alt="linkTatl">
