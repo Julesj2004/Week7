@@ -475,7 +475,7 @@ video {
   background-color: #FFFFFF;
   position: relative;
   border-radius: 6px;
-  width: 229%;
+  width: 429%;
   box-shadow: 5px 5px 2.5px lightgray;
   overflow: auto;
   display: flex;
@@ -526,7 +526,7 @@ video {
     margin: 5px;
   }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (min-width: 480px) and (max-width: 850px) {
   .content {
     width: auto;
     display: flex;
