@@ -55,7 +55,7 @@ nav>label{
     left: 15px;
 } 
 
-@media only screen and (max-width: 921px) {
+@media only screen and (max-width: 1024px) {
     /* sets a tiny bit of the phone layout */
     #menuLinks, #categories, #N64, #gc, #ns{
         max-height: 0px;
@@ -132,7 +132,7 @@ li{
     display: none;
 }
 
-@media only screen and (min-width: 921px) {
+@media only screen and (min-width: 1024px) {
     /* For desktop: NAV */
     #triforce{
         position: relative;
@@ -344,7 +344,7 @@ video{
     width: 100%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
     /* For mobile landscape: homepage */
     #runes>div{
         width: 50%;
@@ -513,7 +513,7 @@ video{
     order: 2;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
     .timelineC::after{
         left: auto;
     }
@@ -550,6 +550,12 @@ video{
     .content>img{
         width: 200px;
         margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .content>img{
+        width: 100%;
     }
 }
 
@@ -608,7 +614,7 @@ video{
     margin-left: 36%;
   }
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 480px) {
     /* ign for desktop: */
     .ign_div > img {
         position: relative;
@@ -718,7 +724,7 @@ video{
     color: #4DA27E;
     font-size: 20px;
   }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
     /* For desktop about us: */
     .aboutUSc{
         overflow: auto;
@@ -861,7 +867,7 @@ a.slide__next{
     }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
     /* For desktop image gallery: */
     #gallery{
         padding-top: 1%;
@@ -892,7 +898,7 @@ footer>div>h1{
     text-align: center;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
     /* For desktop: */
     footer{
         display: flex;
